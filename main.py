@@ -1,4 +1,4 @@
-import addition, subtraction
+import addition, subtraction, multiplication
 
 def getMenuChoice():
     #Prints menu options
@@ -31,7 +31,7 @@ def getMenuChoice():
         elif choice == '3':
             int_choice = 3
             #Calls multiplication function on choice
-            multiplication()
+            multiplication.multiplication()
             loop = True
         elif choice == '4':
             int_choice = 4
@@ -47,14 +47,6 @@ def getMenuChoice():
             #Any value other than 1-5 will validate as an error message to loop back to the menu
             input("Wrong menu selection. Enter any key to try again..")
     return [int_choice, choice]
-
-#Function to multiply two user inputted values together
-def multiplication():
-    print("Multiplication Calculator")
-    a = input("Input a number: ")
-    b = input("Input another number: ")
-    sum = int(a) * int(b)
-    print("Your answer is: " , sum)
 
 #Function to divide two user inputted values together
 #and format to 2 decimal places
