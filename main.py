@@ -1,3 +1,5 @@
+import addition
+
 def getMenuChoice():
     #Prints menu options
     def menu():       
@@ -19,7 +21,7 @@ def getMenuChoice():
         if choice == '1':
             int_choice = 1
             #Calls addition function on choice
-            addition()
+            addition.addition()
             loop = True
         elif choice == '2':
             int_choice = 2
@@ -45,15 +47,6 @@ def getMenuChoice():
             #Any value other than 1-5 will validate as an error message to loop back to the menu
             input("Wrong menu selection. Enter any key to try again..")
     return [int_choice, choice]
-
-
-#Function to add two user inputted values together
-def addition():
-    print("Addition Calculator")
-    a = input("Input a number: ")
-    b = input("Input another number: ")
-    sum = int(a) + int(b)
-    print("Your answer is: " , sum)
 
 #Function to subtract two user inputted values together
 def subtraction():
