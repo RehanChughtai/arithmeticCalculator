@@ -1,4 +1,4 @@
-import addition
+import addition, subtraction
 
 def getMenuChoice():
     #Prints menu options
@@ -26,7 +26,7 @@ def getMenuChoice():
         elif choice == '2':
             int_choice = 2
             #Calls subtraction function on choice
-            subtraction()
+            subtraction.subtraction()
             loop = True 
         elif choice == '3':
             int_choice = 3
@@ -47,14 +47,6 @@ def getMenuChoice():
             #Any value other than 1-5 will validate as an error message to loop back to the menu
             input("Wrong menu selection. Enter any key to try again..")
     return [int_choice, choice]
-
-#Function to subtract two user inputted values together
-def subtraction():
-    print("Subtraction Calculator")
-    a = input("Input a number: ")
-    b = input("Input another number: ")
-    sum = int(a) - int(b)
-    print("Your answer is: " , sum)
 
 #Function to multiply two user inputted values together
 def multiplication():
