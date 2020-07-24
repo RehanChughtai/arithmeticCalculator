@@ -19,4 +19,11 @@ def multiplication():
     sum = int(a) * int(b)
     print("Your answer is: " , sum)
 
-    addition()
+def division():
+    print("Division Calculator")
+    a = input("Input a number: ")
+    b = input("Input another number: ")
+    sum = int(a) / int(b)
+    print("Your answer is: " , "{0:.2f}".format(sum))
+
+division()
